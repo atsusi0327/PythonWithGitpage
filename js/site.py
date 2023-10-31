@@ -1,2 +1,4 @@
-print("Content-type: text/html\n")
-print("hello world")
+#!/usr/bin/python
+import sys
+
+sys.stdout.write("hello world")
