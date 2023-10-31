@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------
+# Font Import 一定要在最上面
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+:root {
+    --font-sans: 'Noto Sans TC', sans-serif;
+    --font-serif: 'Noto Serif TC', serif;
+    --navbar-height: 0;
+    --figure-color-dark: 96,6,9;
+    --figure-color-normal: 152,0,52;
+    --figure-color-light: 254,235,205;
+    --figure-color-sublight: 250,240,203;
+}
+
+[data-bs-theme=light] {
+    --bg-basic: 240, 240, 240;
+    --bg-figure: 254, 235, 205;
+    --text-figure-dark: 96, 6, 9;
+}
+
+[data-bs-theme=dark] {
+    --bg-basic: 40, 40, 40;
+    --bg-figure: 25, 25, 25;
+    --text-figure-dark: 254, 235, 205;
+}
+
+/*--------------------------------------------------------------
+# Default Class
+--------------------------------------------------------------*/
+body {
+    font-family: var(--font-sans);
+}
+/*--------------------------------------------------------------
+# Function
+--------------------------------------------------------------*/
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*-----------------------------------------------------------
+# Fullpage.JS Class
+-----------------------------------------------------------*/
+.fp-watermark {
+    display: none !important;
+}
+
+/*-----------------------------------------------------------
+# Text Class
+-----------------------------------------------------------*/
+.text-figure {
+    color: rgba(var(--text-figure-dark));
+}
+
+/*-----------------------------------------------------------
+# Border Class
+-----------------------------------------------------------*/
+.border-figure {
+    color: rgba(var(--text-figure-dark));
+}
+
+/*-----------------------------------------------------------
+# Background Class
+-----------------------------------------------------------*/
+.bg-nav {
+    background-color: rgb(var(--figure-color-dark));
+}
+
+.bg-basic {
+    background-color: rgba(var(--bg-basic));
+}
+
+.bg-figure {
+    background-color: rgba(var(--bg-figure));
+}
+
+/*-----------------------------------------------------------
+# Height Class
+-----------------------------------------------------------*/
+.h-page {
+    height: calc(100% - var(--navbar-height)) !important;
+}
+
+/*-----------------------------------------------------------
+# Padding Class
+-----------------------------------------------------------*/
+.pt-nav {
+    padding-top: var(--navbar-height);
+}
+
+/*-----------------------------------------------------------
+# Marigin Class
+-----------------------------------------------------------*/
+.mt-nav {
+    margin-top: var(--navbar-height);
+}
+
+/*-----------------------------------------------------------
+# Z-index Class
+-----------------------------------------------------------*/
+.z-max {
+    z-index: 2147483647;
+}

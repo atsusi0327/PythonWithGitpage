@@ -1,0 +1,42 @@
+@keyframes expandWidth {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.scale-end {
+    animation: expandWidth 1s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 2s ease-in-out;
+}
+
+.slide-bottom {
+    animation: slideBottom 2s ease-in-out;
+}
